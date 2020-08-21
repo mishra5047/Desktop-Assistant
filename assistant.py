@@ -4,7 +4,10 @@ import webbrowser
 print("Hey There, I Am Your Assistant")
 input = input("Enter Your Choice  ")
 
-if("brave" in input):
+if (input == ""):
+    print("enter valid choice")
+
+elif("brave" in input):
     os.system("brave-browser")
      
 elif("android" in input):
@@ -35,5 +38,8 @@ elif("teamviewer" in input):
 elif("code" in input or "editor" in input or "visual" in input or "studio" in input):
     os.system("code")    
 
-elif (input == ""):
-    print("enter valid choice")
+elif("vlc" in input):
+    os.system("vlc")
+
+elif("teams" in input):
+    os.system("teams")
